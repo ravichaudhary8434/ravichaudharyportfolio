@@ -3,4 +3,7 @@
 }
 body {
   margin: 0;
+  background-color: #f2f5f9;
+  width: 100vw;
+  height: 100vh;
 }
