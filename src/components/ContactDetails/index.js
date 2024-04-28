@@ -1,4 +1,5 @@
 import { DivTag, TextTag } from "../../StyledComponent";
+import AnchorTag from "../../StyledComponent/AnchorTag";
 import ImgTag from "../../StyledComponent/ImgTag";
 import {
   Download,
@@ -10,25 +11,29 @@ import {
   Phone,
   Twitter,
 } from "../../assets";
-
-const ImgUrl =
-  "https://media.licdn.com/dms/image/D4D03AQFW1unfuBcGrw/profile-displayphoto-shrink_400_400/0/1681057458251?e=1719446400&v=beta&t=Zv9kjIWYVim38gIMGsbdc1M_MnOhH8bbPpDL-qZpTG8";
+import constants from "../../constants";
 
 const ContactDetails = () => {
   return (
     <DivTag
       bgCard
-      marginTop="100px"
+      marginTop="110px"
       borderRadius="20px"
       width="400px"
       height="700px"
       flexCol
       flexAlignCenter
       padding="0 25px"
+      marginRight="20px"
     >
       <DivTag relative width="100%" height="100px" flexCenter>
         <DivTag width="200px" height="200px" absolute bottom="0">
-          <ImgTag src={ImgUrl} height="100%" width="100%" borderRadius="20px" />
+          <ImgTag
+            src={constants.profilePic}
+            height="100%"
+            width="100%"
+            borderRadius="20px"
+          />
         </DivTag>
       </DivTag>
       <TextTag
@@ -38,7 +43,7 @@ const ContactDetails = () => {
         fontWeight="bold"
         marginTop="14px"
       >
-        Ravi Chaudhary
+        {constants.name}
       </TextTag>
       <TextTag
         lineHeight="40px"
@@ -48,13 +53,37 @@ const ContactDetails = () => {
         fontWeight="500"
         opacity="0.5"
       >
-        Full Stack Developer
+        {constants.headline}
       </TextTag>
       <DivTag marginTop="6px" width="296px" flexJustifyBtwAlignCenter>
-        <Facebook />
-        <Twitter />
-        <Linkedin />
-        <Github />
+        <AnchorTag
+          href={constants.fbProfile}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Facebook />
+        </AnchorTag>
+        <AnchorTag
+          href={constants.twitterProfile}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Twitter />
+        </AnchorTag>
+        <AnchorTag
+          href={constants.linkedinProfile}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin />
+        </AnchorTag>
+        <AnchorTag
+          href={constants.githubProfile}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github />
+        </AnchorTag>
       </DivTag>
       <DivTag
         width="350px"
@@ -78,7 +107,7 @@ const ContactDetails = () => {
               Phone
             </TextTag>
             <TextTag fontSize="14px" fontWeight="600" lineHeight="20px">
-              +91-8434133302
+              {constants.phone}
             </TextTag>
           </DivTag>
         </DivTag>
@@ -96,7 +125,7 @@ const ContactDetails = () => {
               Email
             </TextTag>
             <TextTag fontSize="14px" fontWeight="600" lineHeight="20px">
-              ravichaudhary8434@gmail.com
+              {constants.email}
             </TextTag>
           </DivTag>
         </DivTag>
@@ -114,12 +143,18 @@ const ContactDetails = () => {
               Location
             </TextTag>
             <TextTag fontSize="14px" fontWeight="600" lineHeight="20px">
-              Gurugram, Haryana
+              {constants.location}
             </TextTag>
           </DivTag>
         </DivTag>
         <DivTag flexCenter>
-          <Download />
+          <AnchorTag
+            href={constants.resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Download />
+          </AnchorTag>
         </DivTag>
       </DivTag>
     </DivTag>
