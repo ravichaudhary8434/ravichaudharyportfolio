@@ -29,6 +29,12 @@ const DivTag = styled.div`
     `}
 
   ${(props) =>
+    props.bgIcon &&
+    css`
+      background-color: ${(props) => props.theme.colors.bgIcon};
+    `}
+
+  ${(props) =>
     props.bgPrimary &&
     css`
       background-color: ${(props) => props.theme.colors.bgPrimary};

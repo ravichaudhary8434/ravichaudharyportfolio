@@ -1,13 +1,15 @@
 import { DivTag } from "./StyledComponent";
 import ContactDetails from "./components/ContactDetails";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
     <DivTag>
-      <Navbar />
-      <DivTag padding="52px 100px">
+      <Header />
+      <DivTag flex padding="52px 100px">
         <ContactDetails />
+        <HomePage />
       </DivTag>
     </DivTag>
   );

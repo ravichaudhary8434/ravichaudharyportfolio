@@ -24,6 +24,7 @@ const ContactDetails = () => {
       height="700px"
       flexCol
       flexAlignCenter
+      padding="0 25px"
     >
       <DivTag relative width="100%" height="100px" flexCenter>
         <DivTag width="200px" height="200px" absolute bottom="0">
