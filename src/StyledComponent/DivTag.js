@@ -41,6 +41,12 @@ const DivTag = styled.div`
     `}
 
   ${(props) =>
+    props.bgOrangeGradient &&
+    css`
+      background: linear-gradient(91.49deg, #ff9c1a 7.92%, #e80505 108.2%);
+    `}
+
+  ${(props) =>
     props.bdGrey &&
     css`
       border: solid ${(props) => props.theme.sepColor};
