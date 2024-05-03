@@ -35,6 +35,18 @@ const DivTag = styled.div`
     `}
 
   ${(props) =>
+    props.bgPaleOrange &&
+    css`
+      background-color: ${(props) => props.theme.paleOrange};
+    `}
+
+  ${(props) =>
+    props.bgPapayaWhip &&
+    css`
+      background-color: ${(props) => props.theme.papayaWhip};
+    `}
+
+  ${(props) =>
     props.bgPrimary &&
     css`
       background-color: ${(props) => props.theme.colors.bgPrimary};
@@ -78,6 +90,13 @@ const DivTag = styled.div`
     css`
       display: flex;
       align-items: center;
+    `}
+
+  ${(props) =>
+    props.flexJustifyBtw &&
+    css`
+      display: flex;
+      justify-content: space-between;
     `}
 
   ${(props) =>

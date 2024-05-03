@@ -7,6 +7,8 @@ import { ReactComponent as Phone } from "./phone.svg";
 import { ReactComponent as Email } from "./email.svg";
 import { ReactComponent as Location } from "./location.svg";
 import { ReactComponent as Download } from "./download.svg";
+import { ReactComponent as Education } from "./education.svg";
+import { ReactComponent as Experience } from "./experience.svg";
 
 export {
   Logo,
@@ -18,4 +20,6 @@ export {
   Email,
   Location,
   Download,
+  Education,
+  Experience,
 };

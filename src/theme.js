@@ -13,6 +13,8 @@ const theme = {
     subText: "#1A1003",
   },
   sepColor: "#E3E3E3",
+  paleOrange: "#FFE3BF",
+  papayaWhip: "#FFEED9",
 };
 
 const Theme = ({ children }) => (
