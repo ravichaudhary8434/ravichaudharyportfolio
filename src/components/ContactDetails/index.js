@@ -9,6 +9,7 @@ import {
   Linkedin,
   Location,
   Phone,
+  ProfilePic,
   Twitter,
 } from "../../assets";
 import constants from "../../constants";
@@ -29,7 +30,7 @@ const ContactDetails = () => {
       <DivTag relative width="100%" height="100px" flexCenter>
         <DivTag width="200px" height="200px" absolute bottom="0">
           <ImgTag
-            src={constants.profilePic}
+            src={ProfilePic}
             height="100%"
             width="100%"
             borderRadius="20px"

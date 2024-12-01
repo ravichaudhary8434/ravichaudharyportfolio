@@ -1,3 +1,5 @@
+import { CodeIcon } from "../assets";
+
 const constants = {
   name: "Ravi Chaudhary",
   headline: "Full Stack Developer",
@@ -5,15 +7,13 @@ const constants = {
   email: "ravichaudhary8434@gmail.com",
   location: "Gurugram, Haryana",
   profilePic:
-    "https://media.licdn.com/dms/image/D4D03AQFW1unfuBcGrw/profile-displayphoto-shrink_400_400/0/1681057458251?e=1719446400&v=beta&t=Zv9kjIWYVim38gIMGsbdc1M_MnOhH8bbPpDL-qZpTG8",
+    "https://drive.google.com/file/d/1UxRcJSqrDD3yGXGeeVNzNnf2ap6fT1ZK/view?usp=sharing",
   fbProfile: "https://www.facebook.com/malhotraravi842/",
   linkedinProfile: "https://www.linkedin.com/in/ravichaudhary8434/",
   githubProfile: "https://github.com/ravichaudhary8434",
   twitterProfile: "https://twitter.com/ravichaudhary8_",
   resumeLink:
     "https://drive.usercontent.google.com/u/0/uc?id=1bFO25OCCvAu4AF9FeWm2DeDHMg8uTchg&export=download",
-  // resumeLink:
-  //   "https://drive.google.com/file/d/1bFO25OCCvAu4AF9FeWm2DeDHMg8uTchg/view?usp=sharing",
   BIO: `
     Hi, I'm a Software Engineer by profession and an explorer by choice. 😎
     I know a little about a lot of things in tech with a proven track record of delivering highly scalable systems. 
@@ -37,6 +37,15 @@ const constants = {
       duration: "2018 - 2022",
       title: "B.Tech in CSE",
       organization: "BCE Bhagalpur",
+    },
+  ],
+
+  whatIDo: [
+    {
+      title: "Web Development",
+      description:
+        "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+      icon: <CodeIcon />,
     },
   ],
 };

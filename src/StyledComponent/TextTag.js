@@ -18,6 +18,7 @@ const TextTag = styled.div`
   margin-left: ${(props) => props.marginLeft || ""};
   color: ${(props) => props.theme.colors.black};
   opacity: ${(props) => props.opacity || ""};
+  letter-spacing: ${(props) => props.letterSpacing || ""};
 
   ${(props) =>
     props.primaryFont &&

@@ -8,13 +8,24 @@ const Line = styled(DivTag)`
   background: linear-gradient(91.49deg, #ff9c1a 7.92%, #e80505 108.2%);
 `;
 
-const PageTitle = ({ label }) => {
+const PageTitle = ({
+  label,
+  showLine = true,
+  fontSize = "40px",
+  letterSpacing = "1px",
+  ...rest
+}) => {
   return (
-    <DivTag flexAlignCenter marginBottom="14px">
-      <TextTag fontSize="40px" lineHeight="40px" fontWeight="500">
+    <DivTag flexAlignCenter marginBottom="14px" {...rest}>
+      <TextTag
+        fontSize={fontSize}
+        letterSpacing={letterSpacing}
+        lineHeight="40px"
+        fontWeight="500"
+      >
         {label}
       </TextTag>
-      <Line />
+      {showLine && <Line />}
     </DivTag>
   );
 };
