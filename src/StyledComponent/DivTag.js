@@ -17,108 +17,23 @@ const DivTag = styled.div`
   margin-left: ${(props) => props.marginLeft || ""};
   border-radius: ${(props) => props.borderRadius || ""};
   display: ${(props) => props.display || ""};
+  justify-content: ${(props) => props.justifyContent || ""};
+  align-items: ${(props) => props.alignItems || ""};
+  flex-direction: ${(props) => props.flexDirection || ""};
+  flex-wrap: ${(props) => props.flexWrap || ""};
   gap: ${(props) => props.gap || ""};
   top: ${(props) => props.top || ""};
   right: ${(props) => props.right || ""};
   bottom: ${(props) => props.bottom || ""};
   left: ${(props) => props.left || ""};
+  position: ${(props) => props.position || ""};
   border-width: ${(props) => `${props.borderWidth} !important` || ""};
-
-  ${(props) =>
-    props.bgCard &&
-    css`
-      background-color: ${(props) => props.theme.colors.bgCard};
-    `}
-
-  ${(props) =>
-    props.bgIcon &&
-    css`
-      background-color: ${(props) => props.theme.colors.bgIcon};
-    `}
-
-  ${(props) =>
-    props.bgPaleOrange &&
-    css`
-      background-color: ${(props) => props.theme.paleOrange};
-    `}
-
-  ${(props) =>
-    props.bgPapayaWhip &&
-    css`
-      background-color: ${(props) => props.theme.papayaWhip};
-    `}
-
-  ${(props) =>
-    props.bgPrimary &&
-    css`
-      background-color: ${(props) => props.theme.colors.bgPrimary};
-    `}
-
-  ${(props) =>
-    props.bgOrangeGradient &&
-    css`
-      background: linear-gradient(91.49deg, #ff9c1a 7.92%, #e80505 108.2%);
-    `}
+  background-color: ${({ theme, bgColor }) => theme.colors[bgColor] || bgColor};
 
   ${(props) =>
     props.bdGrey &&
     css`
-      border: solid ${(props) => props.theme.sepColor};
-    `}
-
-  ${(props) =>
-    props.flex &&
-    css`
-      display: flex;
-    `}
-
-  ${(props) =>
-    props.flexCol &&
-    css`
-      display: flex;
-      flex-direction: column;
-    `}
-
-  ${(props) =>
-    props.flexCenter &&
-    css`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `}
-
-  ${(props) =>
-    props.flexAlignCenter &&
-    css`
-      display: flex;
-      align-items: center;
-    `}
-
-  ${(props) =>
-    props.flexJustifyBtw &&
-    css`
-      display: flex;
-      justify-content: space-between;
-    `}
-
-  ${(props) =>
-    props.flexJustifyBtwAlignCenter &&
-    css`
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    `}
-
-    ${(props) =>
-    props.relative &&
-    css`
-      position: relative;
-    `}
-
-    ${(props) =>
-    props.absolute &&
-    css`
-      position: absolute;
+      border: solid ${({ theme }) => theme.colors.sepColor};
     `}
 `;
 

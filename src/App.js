@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <DivTag flex padding="32px 100px">
+    <DivTag display="flex" padding="32px 100px">
       <ContactDetails />
       <HomePage />
     </DivTag>

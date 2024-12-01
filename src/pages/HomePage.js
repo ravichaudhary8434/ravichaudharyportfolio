@@ -9,11 +9,11 @@ import Contact from "./Contact";
 const HomePage = () => {
   return (
     <DivTag width="100%">
-      <DivTag flexJustifyBtwAlignCenter>
+      <DivTag display="flex" justifyContent="space-between" alignItems="center">
         <span></span>
         <Navbar />
       </DivTag>
-      <DivTag bgCard width="100%" marginTop="10px" borderRadius="20px">
+      <DivTag bgColor="white" width="100%" marginTop="10px" borderRadius="20px">
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />

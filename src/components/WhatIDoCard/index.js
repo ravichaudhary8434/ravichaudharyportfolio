@@ -5,10 +5,10 @@ const WhatIDoCard = ({ title, description, icon }) => {
     <DivTag
       padding="12px 25px"
       borderRadius="20px"
-      bgPaleOrange
+      bgColor="paleOrange"
       width="calc(50% - 12px)"
     >
-      <DivTag flexAlignCenter gap="8px" marginBottom="8px">
+      <DivTag display="flex" alignItems="center" gap="8px" marginBottom="8px">
         {icon}
         <TextTag fontSize="24px" fontWeight="600" lineHeight="20px">
           {title}

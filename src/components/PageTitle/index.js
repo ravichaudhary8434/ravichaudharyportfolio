@@ -16,7 +16,7 @@ const PageTitle = ({
   ...rest
 }) => {
   return (
-    <DivTag flexAlignCenter marginBottom="14px" {...rest}>
+    <DivTag display="flex" alignItems="center" marginBottom="14px" {...rest}>
       <TextTag
         fontSize={fontSize}
         letterSpacing={letterSpacing}

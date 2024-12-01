@@ -18,7 +18,7 @@ const About = () => {
         letterSpacing="0.8px"
       />
 
-      <DivTag flex gap="24px">
+      <DivTag display="flex" gap="24px">
         {constants?.whatIDo?.map((data) => (
           <WhatIDoCard {...data} />
         ))}

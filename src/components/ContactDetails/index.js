@@ -17,18 +17,26 @@ import constants from "../../constants";
 const ContactDetails = () => {
   return (
     <DivTag
-      bgCard
+      bgColor="white"
       marginTop="110px"
       borderRadius="20px"
       width="400px"
       height="700px"
-      flexCol
-      flexAlignCenter
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
       padding="0 25px"
       marginRight="20px"
     >
-      <DivTag relative width="100%" height="100px" flexCenter>
-        <DivTag width="200px" height="200px" absolute bottom="0">
+      <DivTag
+        position="relative"
+        width="100%"
+        height="100px"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <DivTag width="200px" height="200px" position="absolute" bottom="0">
           <ImgTag
             src={ProfilePic}
             height="100%"
@@ -56,7 +64,13 @@ const ContactDetails = () => {
       >
         {constants.headline}
       </TextTag>
-      <DivTag marginTop="6px" width="296px" flexJustifyBtwAlignCenter>
+      <DivTag
+        marginTop="6px"
+        width="296px"
+        display="flex"
+        alignItems="center"
+        justifyContent="space-between"
+      >
         <AnchorTag
           href={constants.fbProfile}
           target="_blank"
@@ -91,13 +105,13 @@ const ContactDetails = () => {
         height="350px"
         borderRadius="20px"
         marginTop="22px"
-        bgPrimary
+        bgColor="primary"
         padding="33px 24px"
       >
         <DivTag
           width="100%"
           height="63px"
-          flex
+          display="flex"
           bdGrey
           borderWidth="0 0 1px 0"
           marginBottom="16px"
@@ -115,7 +129,7 @@ const ContactDetails = () => {
         <DivTag
           width="100%"
           height="63px"
-          flex
+          display="flex"
           bdGrey
           borderWidth="0 0 1px 0"
           marginBottom="16px"
@@ -133,7 +147,7 @@ const ContactDetails = () => {
         <DivTag
           width="100%"
           height="63px"
-          flex
+          display="flex"
           bdGrey
           borderWidth="0 0 1px 0"
           marginBottom="16px"
@@ -148,7 +162,7 @@ const ContactDetails = () => {
             </TextTag>
           </DivTag>
         </DivTag>
-        <DivTag flexCenter>
+        <DivTag display="flex" justifyContent="center" alignItems="center">
           <AnchorTag
             href={constants.resumeLink}
             target="_blank"

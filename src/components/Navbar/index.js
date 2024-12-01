@@ -6,7 +6,7 @@ const NavLinkWrapper = styled(Link)`
   width: 80px;
   height: 80px;
   border-radius: 20px;
-  background-color: ${(props) => props.theme.colors.bgIcon};
+  background-color: ${(props) => props.theme.colors.icon};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,7 @@ const Navbar = () => {
       borderWidth="2px"
       borderRadius="20px"
     >
-      <DivTag flexAlignCenter height="100%" margin="0 -20px">
+      <DivTag display="flex" alignItems="center" height="100%" margin="0 -20px">
         <NavLink iconClass="fa-solid fa-house" label="Home" path="/" />
         <NavLink
           iconClass="fa-regular fa-file-lines"

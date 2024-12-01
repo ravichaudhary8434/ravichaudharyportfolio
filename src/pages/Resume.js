@@ -8,9 +8,9 @@ const Resume = () => {
   return (
     <DivTag borderRadius="20px" padding="18px 50px">
       <PageTitle label="Resume" />
-      <DivTag flexJustifyBtw>
+      <DivTag display="flex" justifyContent="space-between">
         <DivTag width="calc(50% - 24px)">
-          <DivTag flexAlignCenter>
+          <DivTag display="flex" alignItems="center">
             <Experience />
             <TextTag fontSize="28px" lineHeight="46px" marginLeft="8px">
               Experience
@@ -25,7 +25,7 @@ const Resume = () => {
           ))}
         </DivTag>
         <DivTag width="calc(50% - 24px)">
-          <DivTag flexAlignCenter>
+          <DivTag display="flex" alignItems="center">
             <Education />
             <TextTag fontSize="28px" lineHeight="46px" marginLeft="8px">
               Education

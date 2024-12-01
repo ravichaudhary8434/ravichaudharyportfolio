@@ -5,8 +5,7 @@ const ResumeCard = ({ duration, title, organization, isPrimary = true }) => {
   return (
     <DivTag
       padding="24px 12px"
-      bgPaleOrange={isPrimary ? true : null}
-      bgPapayaWhip={isPrimary ? null : true}
+      bgColor={isPrimary ? "paleOrange" : "papayaWhip"}
       borderRadius="20px"
       margin="24px 0"
     >
