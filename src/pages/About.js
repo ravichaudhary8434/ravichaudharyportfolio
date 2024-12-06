@@ -7,7 +7,7 @@ const About = () => {
   return (
     <DivTag borderRadius="20px" padding="18px 50px" height="700px">
       <PageTitle label="ABOUT ME" />
-      <TextTag fontSize="16px" lineHeight="30px" fontWeight="500">
+      <TextTag secondaryFont fontSize="16px" lineHeight="30px" fontWeight="500">
         {constants.BIO}
       </TextTag>
       <PageTitle
@@ -18,9 +18,12 @@ const About = () => {
         letterSpacing="0.8px"
       />
 
-      <DivTag display="flex" gap="24px">
-        {constants?.whatIDo?.map((data) => (
-          <WhatIDoCard {...data} />
+      <DivTag display="flex" gap="24px" flexWrap="wrap">
+        {constants?.whatIDo?.map((data, index) => (
+          <WhatIDoCard
+            {...data}
+            isPrimary={index % 4 == 0 || index % 4 == 3 ? true : false}
+          />
         ))}
       </DivTag>
     </DivTag>

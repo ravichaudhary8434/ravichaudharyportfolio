@@ -29,6 +29,7 @@ const DivTag = styled.div`
   position: ${(props) => props.position || ""};
   border-width: ${(props) => `${props.borderWidth} !important` || ""};
   background-color: ${({ theme, bgColor }) => theme.colors[bgColor] || bgColor};
+  box-shadow: ${(props) => props.boxShadow || ""};
 
   ${(props) =>
     props.bdGrey &&

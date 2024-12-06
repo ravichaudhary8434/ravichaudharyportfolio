@@ -1,12 +1,13 @@
 import { DivTag, TextTag } from "../../StyledComponent";
 
-const WhatIDoCard = ({ title, description, icon }) => {
+const WhatIDoCard = ({ title, description, icon, isPrimary }) => {
   return (
     <DivTag
       padding="12px 25px"
       borderRadius="20px"
-      bgColor="paleOrange"
+      bgColor={isPrimary ? "paleOrange" : "aliceBlue"}
       width="calc(50% - 12px)"
+      boxShadow="0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06)"
     >
       <DivTag display="flex" alignItems="center" gap="8px" marginBottom="8px">
         {icon}

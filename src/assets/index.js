@@ -12,6 +12,7 @@ import { ReactComponent as Download } from "./download.svg";
 import { ReactComponent as Education } from "./education.svg";
 import { ReactComponent as Experience } from "./experience.svg";
 import { ReactComponent as CodeIcon } from "./code.svg";
+import { ReactComponent as MentorshipIcon } from "./mentorship.svg";
 
 export {
   ProfilePic,
@@ -27,4 +28,5 @@ export {
   Education,
   Experience,
   CodeIcon,
+  MentorshipIcon,
 };

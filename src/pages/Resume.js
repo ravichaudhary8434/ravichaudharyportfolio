@@ -2,6 +2,7 @@ import { DivTag, TextTag } from "../StyledComponent";
 import { Education, Experience } from "../assets";
 import PageTitle from "../components/PageTitle";
 import ResumeCard from "../components/ResumeCard";
+import Skills from "../components/Skills";
 import constants from "../constants";
 
 const Resume = () => {
@@ -41,6 +42,7 @@ const Resume = () => {
           ))}
         </DivTag>
       </DivTag>
+      <Skills />
     </DivTag>
   );
 };
