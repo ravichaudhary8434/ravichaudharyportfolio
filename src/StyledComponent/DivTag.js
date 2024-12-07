@@ -21,6 +21,7 @@ const DivTag = styled.div`
   align-items: ${(props) => props.alignItems || ""};
   flex-direction: ${(props) => props.flexDirection || ""};
   flex-wrap: ${(props) => props.flexWrap || ""};
+  flex-grow: ${(props) => props.flexGrow || ""};
   gap: ${(props) => props.gap || ""};
   top: ${(props) => props.top || ""};
   right: ${(props) => props.right || ""};
@@ -35,6 +36,12 @@ const DivTag = styled.div`
     props.bdGrey &&
     css`
       border: solid ${({ theme }) => theme.colors.sepColor};
+    `}
+
+  ${(props) =>
+    props.bsDefault &&
+    css`
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     `}
 `;
 

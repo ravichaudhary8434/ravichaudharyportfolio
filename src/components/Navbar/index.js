@@ -62,17 +62,12 @@ const Navbar = () => {
       borderRadius="20px"
     >
       <DivTag display="flex" alignItems="center" height="100%" margin="0 -20px">
-        <NavLink iconClass="fa-solid fa-house" label="Home" path="/" />
+        <NavLink iconClass="fa-solid fa-user-secret" label="About" path="/" />
+        <NavLink iconClass="fa-solid fa-code" label="Skills" path="/skills" />
         <NavLink
-          iconClass="fa-regular fa-file-lines"
-          label="Resume"
-          path="/resume"
-        />
-        <NavLink iconClass="fa-solid fa-briefcase" label="Work" path="/work" />
-        <NavLink
-          iconClass="fa-solid fa-id-badge"
-          label="Contact"
-          path="/contact"
+          iconClass="fa-solid fa-briefcase"
+          label="Projects"
+          path="/projects"
         />
       </DivTag>
     </DivTag>

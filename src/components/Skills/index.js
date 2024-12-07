@@ -14,7 +14,7 @@ const Skills = () => {
     <DivTag width="100%" padding="12px 0">
       <PageTitle label="TECHNICAL SKILLS" fontSize="26px" showLine={false} />
 
-      <DivTag display="flex" gap="24px" flexWrap="wrap" paddingTop="12px">
+      <DivTag display="flex" gap="24px" flexWrap="wrap">
         {constants.technicalSkills.map((skill) => (
           <DivTag
             bgColor="icon"

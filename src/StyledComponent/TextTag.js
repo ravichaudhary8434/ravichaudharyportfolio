@@ -19,6 +19,7 @@ const TextTag = styled.div`
   color: ${(props) => props.theme.colors.black};
   opacity: ${(props) => props.opacity || ""};
   letter-spacing: ${(props) => props.letterSpacing || ""};
+  width: ${(props) => props.width || ""};
 
   ${(props) =>
     props.primaryFont &&

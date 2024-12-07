@@ -13,10 +13,16 @@ const PageTitle = ({
   showLine = true,
   fontSize = "40px",
   letterSpacing = "1px",
+  marginBottom = "24px",
   ...rest
 }) => {
   return (
-    <DivTag display="flex" alignItems="center" marginBottom="14px" {...rest}>
+    <DivTag
+      display="flex"
+      alignItems="center"
+      marginBottom={marginBottom}
+      {...rest}
+    >
       <TextTag
         fontSize={fontSize}
         letterSpacing={letterSpacing}

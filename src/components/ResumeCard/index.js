@@ -8,7 +8,7 @@ const ResumeCard = ({ duration, title, organization, isPrimary = true }) => {
       bgColor={isPrimary ? "paleOrange" : "aliceBlue"}
       borderRadius="20px"
       margin="24px 0"
-      boxShadow="0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06)"
+      bsDefault
     >
       <TextTag fontWeight="300" subText opacity="0.5">
         {duration}

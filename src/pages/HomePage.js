@@ -2,9 +2,8 @@ import { DivTag } from "../StyledComponent";
 import Navbar from "../components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import About from "./About";
-import Resume from "./Resume";
-import Work from "./Work";
-import Contact from "./Contact";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 const HomePage = () => {
   return (
@@ -16,9 +15,9 @@ const HomePage = () => {
       <DivTag bgColor="white" width="100%" marginTop="10px" borderRadius="20px">
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<About />} />
         </Routes>
       </DivTag>
     </DivTag>

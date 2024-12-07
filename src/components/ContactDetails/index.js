@@ -21,7 +21,7 @@ const ContactDetails = () => {
       marginTop="110px"
       borderRadius="20px"
       width="400px"
-      height="700px"
+      minHeight="700px"
       display="flex"
       flexDirection="column"
       alignItems="center"

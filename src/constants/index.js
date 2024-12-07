@@ -22,7 +22,7 @@ const constants = {
   experience: [
     {
       duration: "July 2024 - Present",
-      title: "Member Of Technical Staff",
+      title: "MTS - Software Engineer",
       organization: "LambdaTest",
     },
     {
@@ -49,8 +49,8 @@ const constants = {
       organization: "J. L. College, Hajipur",
     },
     {
-      duration: "2013 - 2015",
-      title: "Matriculate",
+      duration: "2014 - 2015",
+      title: "Matriculate - 10th",
       organization: "G. A. Inter High School",
     },
   ],
@@ -78,56 +78,115 @@ const constants = {
 
   technicalSkills: [
     {
-      skill: "JavaScript",
-      icon: <i class="devicon-javascript-plain colored" />,
+      category: "Language",
+      skills: [
+        {
+          skill: "JavaScript",
+          icon: <i class="devicon-javascript-plain colored" />,
+        },
+        {
+          skill: "TypeScript",
+          icon: <i class="devicon-typescript-plain colored" />,
+        },
+        {
+          skill: "Golang",
+          icon: <i class="devicon-go-original-wordmark colored" />,
+        },
+        { skill: "C++", icon: <i class="devicon-cplusplus-plain colored" /> },
+        {
+          skill: "Python",
+          icon: <i class="devicon-python-plain-wordmark colored" />,
+        },
+        {
+          skill: "SQL",
+          icon: <i class="devicon-azuresqldatabase-plain colored" />,
+        },
+        {
+          skill: "HTML5",
+          icon: <i class="devicon-html5-plain-wordmark colored" />,
+        },
+        { skill: "CSS3", icon: <i class="devicon-css3-plain colored" /> },
+        { skill: "Sass", icon: <i class="devicon-sass-original colored" /> },
+      ],
     },
     {
-      skill: "TypeScript",
-      icon: <i class="devicon-typescript-plain colored" />,
+      category: "Frameworks",
+      skills: [
+        {
+          skill: "ReactJS",
+          icon: <i class="devicon-react-original colored" />,
+        },
+        {
+          skill: "NodeJS",
+          icon: <i class="devicon-nodejs-plain-wordmark colored" />,
+        },
+        {
+          skill: "ExpressJS",
+          icon: <i class="devicon-express-original-wordmark" />,
+        },
+        { skill: "NextJS", icon: <i class="devicon-nextjs-plain colored" /> },
+      ],
     },
     {
-      skill: "Golang",
-      icon: <i class="devicon-go-original-wordmark colored" />,
-    },
-    { skill: "C++", icon: <i class="devicon-cplusplus-plain colored" /> },
-    {
-      skill: "Python",
-      icon: <i class="devicon-python-plain-wordmark colored" />,
-    },
-    { skill: "ReactJS", icon: <i class="devicon-react-original colored" /> },
-    {
-      skill: "NodeJS",
-      icon: <i class="devicon-nodejs-plain-wordmark colored" />,
+      category: "Databases",
+      skills: [
+        { skill: "MySQL", icon: <i class="devicon-mysql-original colored" /> },
+        {
+          skill: "MongoDB",
+          icon: <i class="devicon-mongodb-plain-wordmark colored" />,
+        },
+      ],
     },
     {
-      skill: "ExpressJS",
-      icon: <i class="devicon-express-original-wordmark" />,
+      category: "DevOps",
+      skills: [
+        { skill: "GCP", icon: <i class="devicon-googlecloud-plain colored" /> },
+        { skill: "Azure", icon: <i class="devicon-azure-plain colored" /> },
+        {
+          skill: "AWS",
+          icon: <i class="devicon-amazonwebservices-plain-wordmark colored" />,
+        },
+      ],
     },
-    { skill: "NextJS", icon: <i class="devicon-nextjs-plain colored" /> },
     {
-      skill: "SQL",
-      icon: <i class="devicon-azuresqldatabase-plain colored" />,
+      category: "Others",
+      skills: [
+        { skill: "Redux", icon: <i class="devicon-redux-original colored" /> },
+        { skill: "GIT", icon: <i class="devicon-git-plain colored" /> },
+        { skill: "Postman", icon: <i class="devicon-postman-plain colored" /> },
+      ],
+    },
+  ],
+
+  projects: [
+    {
+      projectName: "TIC TAC TOE",
+      description:
+        "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1733213401352-10e83b6384e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      skill: "HTML5",
-      icon: <i class="devicon-html5-plain-wordmark colored" />,
+      projectName: "TIC TAC TOE",
+      description:
+        "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1733213401352-10e83b6384e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-    { skill: "CSS3", icon: <i class="devicon-css3-plain colored" /> },
-    { skill: "Sass", icon: <i class="devicon-sass-original colored" /> },
-    { skill: "Redux", icon: <i class="devicon-redux-original colored" /> },
-    { skill: "MySQL", icon: <i class="devicon-mysql-original colored" /> },
     {
-      skill: "MongoDB",
-      icon: <i class="devicon-mongodb-plain-wordmark colored" />,
+      projectName: "TIC TAC TOE",
+      description:
+        "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1733213401352-10e83b6384e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-    { skill: "GCP", icon: <i class="devicon-googlecloud-plain colored" /> },
-    { skill: "Azure", icon: <i class="devicon-azure-plain colored" /> },
     {
-      skill: "AWS",
-      icon: <i class="devicon-amazonwebservices-plain-wordmark colored" />,
+      projectName: "TIC TAC TOE",
+      description:
+        "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1733213401352-10e83b6384e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-    { skill: "GIT", icon: <i class="devicon-git-plain colored" /> },
-    { skill: "Postman", icon: <i class="devicon-postman-plain colored" /> },
   ],
 };
 
