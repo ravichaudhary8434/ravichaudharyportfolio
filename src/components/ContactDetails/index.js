@@ -1,17 +1,7 @@
 import { DivTag, TextTag } from "../../StyledComponent";
 import AnchorTag from "../../StyledComponent/AnchorTag";
 import ImgTag from "../../StyledComponent/ImgTag";
-import {
-  Download,
-  Email,
-  Facebook,
-  Github,
-  Linkedin,
-  Location,
-  Phone,
-  ProfilePic,
-  Twitter,
-} from "../../assets";
+import { Download, Email, Location, Phone, ProfilePic } from "../../assets";
 import constants from "../../constants";
 
 const ContactDetails = () => {
