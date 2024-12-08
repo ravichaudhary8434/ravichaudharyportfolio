@@ -1,17 +1,13 @@
-import { CodeIcon, MentorshipIcon } from "../assets";
+import { CodeIcon, Leetcode, MentorshipIcon } from "../assets";
 
 const constants = {
   name: "Ravi Chaudhary",
   headline: "Full Stack Developer",
   phone: "+91-8434133302",
   email: "ravichaudhary8434@gmail.com",
-  location: "Gurugram, Haryana",
+  location: "Noida, Uttar Pradesh",
   profilePic:
     "https://drive.google.com/file/d/1UxRcJSqrDD3yGXGeeVNzNnf2ap6fT1ZK/view?usp=sharing",
-  fbProfile: "https://www.facebook.com/malhotraravi842/",
-  linkedinProfile: "https://www.linkedin.com/in/ravichaudhary8434/",
-  githubProfile: "https://github.com/ravichaudhary8434",
-  twitterProfile: "https://twitter.com/ravichaudhary8_",
   resumeLink:
     "https://drive.usercontent.google.com/u/0/uc?id=1bFO25OCCvAu4AF9FeWm2DeDHMg8uTchg&export=download",
   BIO: `
@@ -19,6 +15,43 @@ const constants = {
     I know a little about a lot of things in tech with a proven track record of delivering highly scalable systems. 
     I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things; the more, the better.
 `,
+  socialProfiles: [
+    {
+      platform: "Linkedin",
+      profileUrl: "https://www.linkedin.com/in/ravichaudhary8434/",
+      icon: (
+        <i
+          class="fa-brands fa-linkedin"
+          style={{ color: "#0077B5", fontSize: "24px" }}
+        />
+      ),
+    },
+    {
+      platform: "Github",
+      profileUrl: "https://github.com/ravichaudhary8434",
+      icon: (
+        <i
+          class="fa-brands fa-github"
+          style={{ color: "#0B0909", fontSize: "24px" }}
+        />
+      ),
+    },
+    {
+      platform: "Leetcode",
+      profileUrl: "https://leetcode.com/ravichaudhary8434/",
+      icon: <Leetcode style={{ width: "24px", height: "24px" }} />,
+    },
+    {
+      platform: "Twitter",
+      profileUrl: "https://twitter.com/ravichaudhary8_",
+      icon: (
+        <i
+          class="fa-brands fa-twitter"
+          style={{ color: "#1DA1F2", fontSize: "24px" }}
+        />
+      ),
+    },
+  ],
   experience: [
     {
       duration: "July 2024 - Present",

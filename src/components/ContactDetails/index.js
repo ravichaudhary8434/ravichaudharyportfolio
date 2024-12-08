@@ -66,43 +66,38 @@ const ContactDetails = () => {
       </TextTag>
       <DivTag
         marginTop="6px"
-        width="296px"
+        width="100%"
+        maxWidth="296px"
         display="flex"
         alignItems="center"
-        justifyContent="space-between"
+        gap="8px"
       >
-        <AnchorTag
-          href={constants.fbProfile}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Facebook />
-        </AnchorTag>
-        <AnchorTag
-          href={constants.twitterProfile}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Twitter />
-        </AnchorTag>
-        <AnchorTag
-          href={constants.linkedinProfile}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Linkedin />
-        </AnchorTag>
-        <AnchorTag
-          href={constants.githubProfile}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github />
-        </AnchorTag>
+        {constants.socialProfiles?.map((profile) => (
+          <AnchorTag
+            href={profile?.profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            width="calc(25% - 6px)"
+            aspectRatio="1"
+            textDecoration="none"
+          >
+            <DivTag
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              bgColor="aliceBlue"
+              width="100%"
+              height="100%"
+              borderRadius="6px"
+            >
+              {profile?.icon}
+            </DivTag>
+          </AnchorTag>
+        ))}
       </DivTag>
+
       <DivTag
-        width="350px"
-        height="350px"
+        width="100%"
         borderRadius="20px"
         marginTop="22px"
         bgColor="primary"
